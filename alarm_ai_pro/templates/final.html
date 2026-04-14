@@ -1,0 +1,54 @@
+<!-- /<!DOCTYPE html>
+<html>
+<head>
+    <title>Final Alarm</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="glass">
+
+        <h1>🎯 Final Alarm</h1>
+
+        <div id="finalBox"></div>
+
+        <button onclick="playSound()">🔔 Start Alarm</button>
+        <button onclick="goBack()">⬅ Home</button>
+
+    </div>
+</div>
+
+<audio id="alarmSound" src="/static/alarm.mp3" preload="auto"></audio>
+
+<script src="/static/script.js"></script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Final Alarm</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="glass">
+
+        <h1>🎯 Final Alarm</h1>
+
+        <div id="finalBox"></div>
+
+        <button onclick="setAlarmFromFinal()">⏰ Set Alarm</button>
+        <button onclick="stopAlarm()">🔕 Stop Alarm</button>
+        <button onclick="goBack()">⬅ Home</button>
+
+    </div>
+</div>
+
+<audio id="alarmSound" src="/static/alarm.mp3" preload="auto"></audio>
+
+<script src="/static/script.js"></script>
+</body>
+</html>

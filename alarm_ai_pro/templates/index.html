@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Sleep Alarm</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+<div class="container">
+    <div class="glass">
+
+        <h1>🌙 AI Sleep Alarm</h1>
+        <p class="subtitle">Smart wake-up powered by AI</p>
+
+        <!-- ⏰ TIME INPUT -->
+        <label>⏰ Select Sleep Time</label>
+        <div class="time-box">
+            <input type="number" id="hour" placeholder="HH" min="1" max="12" required>
+            <input type="number" id="minute" placeholder="MM" min="0" max="59" required>
+
+            <select id="ampm">
+                <option value="AM">AM</option>
+                <option value="PM">PM</option>
+            </select>
+        </div>
+
+        <!-- 📅 DATE -->
+        <label>📅 Select Date</label>
+        <input type="date" id="date">
+
+        <!-- 🎯 GOAL -->
+        <label>🎯 Sleep Goal</label>
+        <select id="goal">
+            <option value="normal">Normal Sleep</option>
+            <option value="early">Early Riser</option>
+            <option value="late">Late Sleeper</option>
+        </select>
+
+        <!-- 🚀 BUTTON -->
+        <button onclick="getSuggestion()">🚀 Generate Smart Alarm</button>
+
+        <!-- 🌗 THEME -->
+        <button onclick="toggleTheme()">🌗 Toggle Light / Dark</button>
+
+    </div>
+</div>
+
+<!-- 👑 CREATOR -->
+<footer class="creator">
+    Created by <b>Shibnath Sahoo</b> 🚀
+</footer>
+
+<script src="/static/script.js"></script>
+
+</body>
+</html>
